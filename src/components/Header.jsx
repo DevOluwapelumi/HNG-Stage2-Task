@@ -11,7 +11,7 @@ const Header = () => {
           <nav>
             <ul className="flex space-x-4">
               <li><Link to="/" className="hover:underline">Shop</Link></li>
-              <li><Link to="/" className="hover:underline">Wishlist</Link></li>
+              <li><Link to="/addcart" className="hover:underline">Wishlist</Link></li>
               <li><Link to="/cart" className="hover:underline">Cart</Link></li>
             </ul>
           </nav>
