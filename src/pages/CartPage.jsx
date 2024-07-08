@@ -3,18 +3,22 @@ import { FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CheckoutSummaryModal from '../pages/CheckoutSummaryModal';
+import image1 from '../assets/shirt2.png'; 
+import image2 from '../assets/shirt5.png'; 
+import image3 from '../assets/shirt6.png'; 
+
 
 
 const CartPage = () => {
   const [cart, setCart] = useState([
-    { id: 1, name: 'One Life Graphic T-Shirt', price: 260, quantity: 1, color: 'Brown', image: '/src/assets/shirt2.png' },
-    { id: 2, name: 'Vertical Striped Shirt', price: 212, quantity: 1, color: 'Green', image: '/src/assets/shirt5.png' },
-    { id: 3, name: 'Skinny Fit Jeans', price: 240, quantity: 1, color: 'Blue', image: '/src/assets/shirt6.png' },
+    { id: 1, name: 'One Life Graphic T-Shirt', price: 260, quantity: 0, color: 'Brown', image: image1 },
+    { id: 2, name: 'Vertical Striped Shirt', price: 212, quantity: 0, color: 'Green', image: image2 },
+    { id: 3, name: 'Skinny Fit Jeans', price: 240, quantity: 0, color: 'Blue', image: image3 },
   ]);
 
   const updateQuantity = (id, change) => {
     setCart(cart.map(item => 
-      item.id === id ? { ...item, quantity: Math.max(1, item.quantity + change) } : item
+      item.id === id ? { ...item, quantity: Math.max(0, item.quantity + change) } : item
     ));
   
     // Update orderSummary based on new cart state

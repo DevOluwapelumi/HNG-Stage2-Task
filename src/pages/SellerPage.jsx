@@ -2,7 +2,12 @@ import { useState } from 'react';
 import { BsStarFill, BsStarHalf, BsStar, BsPlus, BsDash } from 'react-icons/bs';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-// import { Link } from 'react-router-dom';
+import image4 from '../assets/product1.png'; 
+import image5 from '../assets/product2.png'; 
+import image6 from '../assets/product3.png'; 
+import image7 from '../assets/product4.png'; 
+import image8 from '../assets/shirt2.png'; 
+import image9 from '../assets/shirt.png'; 
 
 const SellerPage = () => {
 
@@ -44,10 +49,10 @@ const SellerPage = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Polo with Contrast Trim', price: '$22', img: '/src/assets/product1.png' },
-    { name: 'Gradient Graphic T-shirt', price: '$28', img: '/src/assets/product2.png' },
-    { name: 'Polo with Tipping Details', price: '$30', img: '/src/assets/product3.png' },
-    { name: 'Black Striped T-shirt', price: '$26', img: '/src/assets/product4.png' },
+    { name: 'Polo with Contrast Trim', price: '$22', img: image4 },
+    { name: 'Gradient Graphic T-shirt', price: '$28', img: image5 },
+    { name: 'Polo with Tipping Details', price: '$30', img: image6 },
+    { name: 'Black Striped T-shirt', price: '$26', img: image7 },
   ];
 
   return (
@@ -59,12 +64,12 @@ const SellerPage = () => {
         <section className="bg-white p-4 shadow-md rounded-md">
           <div className="flex flex-col md:flex-row">
             <div className="flex-1">
-              <img src="/src/assets/shirt.png" alt="Product" className=" h-auto" />
+              <img src={image9} alt="Product" className=" h-auto" />
               <div className="flex space-x-2 mt-4">
-                <img src="/src/assets/shirt2.png" alt="Product" className="w-16 h-16" />
-                <img src="/src/assets/shirt2.png" alt="Product" className="w-16 h-16" />
-                <img src="/src/assets/shirt2.png" alt="Product" className="w-16 h-16" />
-                <img src="/src/assets/shirt2.png" alt="Product" className="w-16 h-16" />
+                <img src={image8} alt="Product" className="w-16 h-16" />
+                <img src={image8} alt="Product" className="w-16 h-16" />
+                <img src={image8} alt="Product" className="w-16 h-16" />
+                <img src={image8} alt="Product" className="w-16 h-16" />
               </div>
             </div>
             <div className="flex-1 p-4">
